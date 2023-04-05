@@ -59,6 +59,7 @@ main {
         display: flex;
         flex: 1;
         min-width: 30%;
+        max-width: 35%;
         
         background-image: url(resources/jiawei-zhao-BsXeYX3efOI-unsplash.jpg);
         background-position: center;
@@ -89,12 +90,13 @@ main {
     }
 
     main > .not-a-service > .form-header {
-        font-size: 2vw;
+        font-size: clamp(1rem, 2vw, 2rem);
         font-family: var(--font-head);
     }
 
     .signup-form-container {
         margin-top: 2%;
+        font-family: var(--font-body);
     }
 
     .signup-form {
