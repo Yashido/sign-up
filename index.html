@@ -30,35 +30,33 @@
 
         <section class="signup-form-container">
             <h2>Let's do this!</h2>
-                <form action="#" method="post">
-                    <div class="signup-form">
-                        <div class="form-left-field">
-                            <div class="form-field">
-                                <label for="first-name">First Name</label>
-                                <input type="text" name="first-name" id="first-name" placeholder="John" required>
-                            </div>
-                            <div class="form-field">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email" placeholder="NekoCafe@gmail.com" required>
-                            </div>
-                            <div class="form-field">
-                                <label for="password">Password</label>
-                                <input type="password" name="password" id="password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})">
-                            </div>
+                <form action="#" method="post" class="signup-form">
+                    <div class="form-left-field">
+                        <div class="form-field">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="John" required>
                         </div>
-                        <div class="form-right-field">
-                            <div class="form-field">
-                                <label for="last-name">Last Name</label>
-                                <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
-                            </div>
-                            <div class="form-field">
-                                <label for="phone-number">Phone Number</label>
-                                <input type="number" name="phone-number" id="phone-number">
-                            </div>
-                            <div class="form-field">
-                                <label for="cpassword">Confirm Password</label>
-                                <input type="password" name="cpassword" id="cpassword" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})">
-                            </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="NekoCafe@gmail.com" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})">
+                        </div>
+                    </div>
+                    <div class="form-right-field">
+                        <div class="form-field">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="number" name="phone-number" id="phone-number">
+                        </div>
+                        <div class="form-field">
+                            <label for="cpassword">Confirm Password</label>
+                            <input type="password" name="cpassword" id="cpassword" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})">
                         </div>
                     </div>
                 </form>
@@ -66,8 +64,10 @@
 
         <section class="submit-login">
             <button type="submit" class="signup-button">Create Account</button>
-            <p class="account-login">Already have an account?</p>
-            <a href="#">Log in</a>
+            <div class="account-login">
+                <p>Already have an account?</p>
+                <a href="#">Log in</a>
+            </div>
         </section>
     </main>
 </body>

@@ -95,12 +95,41 @@ main {
     }
 
     .signup-form-container {
-        margin-top: 2%;
+        margin-top: 5%;
         font-family: var(--font-body);
     }
 
     .signup-form {
         display: flex;
         flex-direction: row;
+        padding: 5%;
+        gap: calc(1rem + 1.5vw);
+        justify-content: center;
     }
+
+    .form-left-field,
+    .form-right-field {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: calc(.2rem + .5vw);
+    }
+
+
+    .form-field {
+        display: flex;
+        flex-direction: column;
+        gap: .2vw;
+        font-size: calc(.5rem + 0.8vw);
+        min-width: auto;
+      }
+
+      .submit-login {
+        margin-top: 5%;
+      }
+
+      .account-login {
+        display: flex;
+        gap: .5vw;
+      }
 }
