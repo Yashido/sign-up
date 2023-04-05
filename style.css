@@ -5,3 +5,76 @@
 
     --color-main:#000000;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    padding: 2%;
+}
+
+header > .logo {
+    font-family: var(--font-logo);
+    font-size: clamp(1rem, 7vw, 2rem);
+    display: flex;
+    flex-wrap: nowrap;
+    gap: .5rem;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-main);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 2vh;
+}
+
+
+@media only screen and (min-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        flex-direction: row;
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 16px;
+        padding: 0;
+        height: 100vh;
+    }
+
+    header {
+        display: flex;
+        flex: 1;
+        min-width: 40%;
+        
+        background-image: url(resources/jiawei-zhao-BsXeYX3efOI-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    header > .logo {
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 15vh;
+        width: 100%;
+        margin-top: clamp(20%, 15vh, 30% );
+    }
+
+    main {
+        color: var(--color-main);
+        margin-top: 0;
+    }
+}
