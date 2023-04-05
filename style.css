@@ -58,7 +58,7 @@ main {
     header {
         display: flex;
         flex: 1;
-        max-width: 30%;
+        min-width: 30%;
         
         background-image: url(resources/jiawei-zhao-BsXeYX3efOI-unsplash.jpg);
         background-position: center;
@@ -72,7 +72,7 @@ main {
         justify-content: center;
         
         background-color: rgba(255, 255, 255, 0.5);
-        height: 15vh;
+        height: fit-content;
         width: 100%;
         margin-top: clamp(20%, 15vh, 30% );
         overflow: hidden;
@@ -84,6 +84,21 @@ main {
 
     main {
         color: var(--color-main);
-        margin-top: 0;
+        margin-top: 8%;
+        padding: 2%;
+    }
+
+    main > .not-a-service > .form-header {
+        font-size: 2vw;
+        font-family: var(--font-head);
+    }
+
+    .signup-form-container {
+        margin-top: 2%;
+    }
+
+    .signup-form {
+        display: flex;
+        flex-direction: row;
     }
 }
