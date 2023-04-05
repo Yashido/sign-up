@@ -58,7 +58,7 @@ main {
     header {
         display: flex;
         flex: 1;
-        min-width: 40%;
+        max-width: 30%;
         
         background-image: url(resources/jiawei-zhao-BsXeYX3efOI-unsplash.jpg);
         background-position: center;
@@ -67,10 +67,19 @@ main {
     }
 
     header > .logo {
+        font-family: var(--font-logo);
+        padding: 2%;
+        justify-content: center;
+        
         background-color: rgba(255, 255, 255, 0.5);
         height: 15vh;
         width: 100%;
         margin-top: clamp(20%, 15vh, 30% );
+        overflow: hidden;
+    }
+
+    .logo-text {
+        font-size: 4vw;
     }
 
     main {
