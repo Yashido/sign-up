@@ -124,11 +124,22 @@ main {
         gap: .2vw;
         font-size: calc(.5rem + 0.8vw);
         min-width: auto;
-      }
+    }
+    
+    input:focus {
+        background-color: rgb(232, 232, 232);
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 3px;
+    }
+
+    input:focus{
+        outline: none;
+        border: 2px solid var(--color-main);
+    }
 
     .submit-login {
         margin-top: 5%;
-      }
+    }
 
     .signup-button {
         font-family: var(--font-head);
