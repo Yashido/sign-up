@@ -48,6 +48,7 @@ main {
     body {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
         background-color: #ffffff;
         color: #000000;
         font-size: 16px;
@@ -87,6 +88,7 @@ main {
         color: var(--color-main);
         margin-top: 8%;
         padding: 2%;
+        flex-wrap: nowrap;
     }
 
     main > .not-a-service > .form-header {
