@@ -136,7 +136,7 @@ main {
         outline: none;
         border: 2px solid var(--color-main);
         border-radius: 5px;
-        padding: .5%;
+        padding: 1%;
     }
 
     .error {
