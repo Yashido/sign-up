@@ -132,9 +132,21 @@ main {
         border-radius: 3px;
     }
 
-    input:focus{
+    input {
         outline: none;
         border: 2px solid var(--color-main);
+    }
+
+    
+    .error {
+            background-color: red;
+            color: rgb(255, 51, 51);
+            font-family: sans-serif;
+            font-weight: 500;
+            text-transform: none;
+            overflow: hidden;
+            margin-top: 4px;
+        
     }
 
     .submit-login {
