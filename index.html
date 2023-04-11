@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Pathway+Gothic+One&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Sign-up form</title>
 </head>
 <body>
@@ -31,44 +32,47 @@
         <section class="signup-form-container">
             <h2>Let's do this!</h2>
                 <form action="#" method="post" class="signup-form">
-                    <div class="form-left-field">
-                        <div class="form-field">
-                            <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                    <div class="form-section">
+                        <div class="form-left-field">
+                            <div class="form-field">
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" placeholder="NekoCafe@gmail.com" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" class="error" id="password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})">
+                            </div>
                         </div>
-                        <div class="form-field">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="NekoCafe@gmail.com" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" class="error" id="password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})">
+                        <div class="form-right-field">
+                            <div class="form-field">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="phone-number">Phone Number</label>
+                                <input type="number" name="phone-number" id="phone-number">
+                            </div>
+                            <div class="form-field">
+                                <label for="cpassword">Confirm Password</label>
+                                <input type="password" name="cpassword" class="error" id="cpassword" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})">
+                            </div>
                         </div>
                     </div>
-                    <div class="form-right-field">
-                        <div class="form-field">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name" id="last-name" placeholder="Doe" required>
+                    <section class="submit-login">
+                        <button type="submit" class="signup-button">Create Account</button>
+                        <div class="account-login">
+                            <p>Already have an account?</p>
+                            <a href="#">Log in</a>
                         </div>
-                        <div class="form-field">
-                            <label for="phone-number">Phone Number</label>
-                            <input type="number" name="phone-number" id="phone-number">
-                        </div>
-                        <div class="form-field">
-                            <label for="cpassword">Confirm Password</label>
-                            <input type="password" name="cpassword" class="error" id="cpassword" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})">
-                        </div>
-                    </div>
+                    </section>
                 </form>
         </section>
 
-        <section class="submit-login">
-            <button type="submit" class="signup-button">Create Account</button>
-            <div class="account-login">
-                <p>Already have an account?</p>
-                <a href="#">Log in</a>
-            </div>
-        </section>
+        
     </main>
 </body>
 </html>

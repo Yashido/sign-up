@@ -103,12 +103,16 @@ main {
 
     .signup-form {
         display: flex;
+        flex-direction: column;
+        
+    }
+    .form-section {
+        display: flex;
         flex-direction: row;
-        padding: 5%;
+        padding: 2%;
         gap: calc(1rem + 1.5vw);
         justify-content: center;
     }
-
     .form-left-field,
     .form-right-field {
         flex: 1;
