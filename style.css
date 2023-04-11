@@ -91,7 +91,7 @@ main {
         flex-wrap: nowrap;
     }
 
-    main > .not-a-service > .form-header {
+    main > .service-text > .form-header {
         font-size: clamp(1rem, 2vw, 2rem);
         font-family: var(--font-head);
     }

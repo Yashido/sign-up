@@ -1,1 +1,1 @@
-const firstName = document.querySelector
+const form = document.querySelector('signup-form');
