@@ -4,9 +4,7 @@ const submitBtn = document.querySelector('.signup-button'),
       passwordConfirm = document.querySelector('#cpassword'),
       email = document.querySelector('#email'),
       errorDisplayers = document.getElementsByClassName('error-text'),
-      inputFields = document.querySelectorAll('input'),
-      cardContainer = document.querySelector('.card-container'),
-      outroOverlay = document.querySelector('.outro-overlay')
+      inputFields = document.querySelectorAll('input')
 
 let count = 2
 
@@ -38,7 +36,7 @@ email.addEventListener('keyup', (e)=>{
 
 password.addEventListener('keyup', (e)=>{
     let message = errorDisplayers[4]
-    password.value.length >= 8 ? onValidation(message, '', 1) :  onValidation(message, 'Password requires minimum 8 charecters', 0)
+    password.value.length >= 8 ? onValidation(message, '', 1) :  onValidation(message, 'Password requires minimum 8 character', 0)
 })
 
 passwordConfirm.addEventListener('keyup', (e)=>{
@@ -50,7 +48,6 @@ submitBtn.addEventListener('click', (e)=>{
     e.preventDefault()
     if(count > 5){
         cardContainer.style.display = 'none'
-        outroOverlay.classList.remove('disabled')
     }
     else{
         for(let i=0; i<errorDisplayers.length; i++){
