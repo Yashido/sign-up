@@ -1,4 +1,4 @@
-#TOP | Sign-up form project
+# TOP | Sign-up form project
 
 Live link: https://jpablico.github.io/sign-up/
 
